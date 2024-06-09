@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wolf</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            background-color: #E0F7FA;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00BCD4;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #00BCD4;
+            padding-bottom: 10px;
+        }
+        .contact-form {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #00BCD4;
+            color: #FFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #008C9E;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Andreas Wolf</h1>
+</header>
+
+<div class="container">
+    <section class="section">
+        <h2>Über mich</h2>
+        <p>Hallo! Mein Name ist Andreas und ich bin Industrieinformatiker. In meiner Freizeit beschäftige ich mich gerne mit Philosophie.</p>
+    </section>
+
+    <section class="section">
+        <h2>Lebenslauf</h2>
+        <p>Hier könnte dein Lebenslauf stehen. Du könntest diese Sektion erweitern, um deine beruflichen Erfahrungen, Bildungsweg und Fähigkeiten detailliert darzustellen.</p>
+    </section>
+
+    <section class="section">
+        <h2>Hobbys</h2>
+        <p>Philosophie: Ich liebe es, über die großen Fragen des Lebens nachzudenken und philosophische Texte zu lesen.</p>
+    </section>
+
+    <section class="section">
+        <h2>Kontakt</h2>
+        <div class="contact-form">
+            <form action="mailto:deine-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
